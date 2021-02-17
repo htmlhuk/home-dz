@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.min.css">
+</head>
+
+<body>
+ 
+      {% include 'app/module/_index/_header/_header.njk' %}
+       
+    <main class="main">
+ 
+      {% include 'app/module/_index/_top-slider/_top-slider.njk' %}
+      {% include 'app/module/_index/_services/_services.njk' %}
+      {% include 'app/module/_index/_product/_product.njk' %}
+      {% include 'app/module/_index/_decor/_decor.njk' %}
+      {% include 'app/module/_index/_design/_design.njk' %}
+      {% include 'app/module/_index/_video/_video.njk' %}
+      {% include 'app/module/_index/_articles/_articles.njk' %}
+ 
+    </main>
+
+      {% include 'app/module/_index/_footer/_footer.njk' %}
+
+ 
+ 
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

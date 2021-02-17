@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/product-detalis.min.css">
+</head>
+
+<body>
+
+           {% include 'app/module/_index/_header/_header.njk' %}
+
+    <main class="main">
+
+        <section class="top">
+            <div class="container">
+                <h2 class="top__title">Product Detalis</h2>
+                
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Product Detalis</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        {% include 'app/module/_product-detalis/_product-detalis.njk' %}
+   
+
+    </main>
+
+  {% include 'app/module/_index/_footer/_footer.njk' %}
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

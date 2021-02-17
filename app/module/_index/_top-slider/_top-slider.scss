@@ -1,0 +1,139 @@
+// top-slider
+.top-slider {
+    background-color: #fcd7b6;
+    padding: 100px 0 40px;
+    &__container {
+        max-width: 1460px;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        img {
+            object-fit: contain;
+        }
+    }
+    &__content {
+        padding-top: 120px;
+        padding-left: 140px;
+    }
+    &__title {
+        font-size: 72px;
+        line-height: 70px;
+        color: $default;
+    }
+    &__descr {
+        max-width: 380px;
+        margin: 40px 0;
+        font-size: 18px;
+        line-height: 30px;
+        color: #436372;
+    }
+}
+
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50px);
+    counter-reset: counter;
+}
+
+.slick-dots li{
+    font-size: 0;
+    position: relative;
+    &::before {
+        content: counter(counter);
+        counter-increment: counter(counter);
+    }
+}
+
+.slick-dots li + li {
+    margin-left: 15px;
+    display: block;
+}
+
+.slick-dots li button {
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.330);
+    &:focus {
+        outline: transparent;
+    }
+}
+
+.slick-dots .slick-active button{
+    background-color: #fff;
+}
+///////////////////////////////
+
+
+
+@media(max-width: 1345px) {
+    .top-slider {
+        &__item {
+            img {
+                height: 400px;
+                width: 400px;
+            }
+        }
+        &__content {
+            padding: 30px 0 0 20px;
+        }
+    }
+}
+
+@media(max-width: 1080px) {
+    .top-slider {
+        padding: 30px 0 0;
+        &__item {
+            img {
+                height: 280px;
+            }
+        }
+        &__content {
+            padding: 15px 0 15px 15px;
+        }
+        .slick-dots {
+            margin-top: 80px;
+        }
+    }
+}
+
+@media(max-width: 792px) {
+    .top-slider {
+        &__item {
+            img { 
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .top-slider {
+        .slick-dots {
+            margin-top: 100px;
+        }
+    }
+}
+
+@media(max-width: 450px) {
+    .top-slider {
+       &__title {
+           font-size: 42px;
+           line-height: 48px;
+       }
+       &__descr {
+           margin: 20px 0;
+       }
+    }
+}

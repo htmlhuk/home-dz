@@ -1,0 +1,93 @@
+.touch {
+    padding: 120px 0 80px;
+    &__title {
+        font-size: 35px;
+        text-align: center;
+        @extend %dmsans-700;
+        color: #436372;
+        margin-bottom: 65px;
+        a {
+            font-size: 16px;
+            display: block;
+            color: #a3bbc8;
+        }
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 10px;
+        width: 370px;
+        height: 380px;
+        background-color: #fbfbfb;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        &:hover {
+            border-color: #a3bbc8;
+            .touch__wrap {
+                background-color: #a3bbc8;
+                path {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        background-color: #fff;
+        transition: all .3s;
+        path {
+            transition: all .3s;
+            fill: #a7beca;
+        }
+    }
+    &__item-title {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 26px;
+        color: #222;
+        @extend %dmsans-700
+    }
+    &__item-address {
+        color: #565872;
+        @extend %rubik-400;
+    }
+    &__item-link { 
+        color: #565872;
+        transition: all .3s;
+        @extend %rubik-400;
+        &:hover {
+            color:#a3bbc8;
+        }
+    } 
+}
+
+
+@media(max-width: 1200px) {
+    .touch {
+        padding: 50px 0 50px;
+        &__items {
+            justify-content: space-around;
+            row-gap: 20px;
+        }
+        &__item {
+            padding: 10px;
+            width: 330px;
+            height: 300px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+// modal
+.modal {
+    padding-top: 115px;
+    &__form {
+        margin: 0 auto;
+        max-width: 470px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__label {
+        margin-bottom: 26px;
+        font-size: 14px;
+        color: #436372;
+        @extend %rubik-400;
+        &:last-of-type {
+            margin-bottom: 54px;
+        }
+    }
+    &__input {
+        padding: 0 15px;
+        width: 100%;
+        height: 54px;
+        border: 1px solid #f1f0f0;
+    }
+    &__btn {
+        padding: 22px 0 16px;
+        font-size: 18px;
+        color: #fffefe;
+        background-color: #a3bbc8;
+        border: none;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover {
+            background-color: $accent;
+        }
+    }
+    &__check-box {
+        padding: 34px 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #f1f0f0;
+    }
+    &__label-checkbox,
+    &__password {
+        font-size: 14px;
+        line-height: 48px;
+        color: #436372;
+        @extend %rubik-400;
+    }
+}
+
+.create-account {
+    padding-top: 30px;
+    margin-bottom: 118px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__text {
+        font-size: 14px;
+        line-height: 48px;
+        color: #436372;
+        @extend %rubik-400;
+    }
+    &__link {
+        max-width: 470px;
+        width: 100%;
+        padding: 18px 0;
+        border: 2px solid #a3bbc8;
+        text-align: center;
+        font-size: 18px;
+        transition: all .3s;
+        &:hover {
+            border-color: transparent;
+            background-color: $accent;
+        }
+    }
+}
+/////////////////////////////////

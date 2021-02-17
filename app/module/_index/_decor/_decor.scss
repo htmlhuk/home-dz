@@ -1,0 +1,126 @@
+
+// decor
+.decor {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    &__left,
+    &__right {
+        width: 50%;
+        min-height: 390px;
+        display: flex;
+        background-color: #feefe2;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        left: calc(50% - 300px);
+        top: -100px;
+    }
+
+    &__wrap {
+        padding: 10% 0 0 50%;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        font-size: 26px;
+        color: $default;
+        @extend %dmsans-700;
+    }
+    &__descr {
+        max-width: 340px;
+        margin-bottom: 20px;
+        color: $default;
+        @extend %rubik-400;
+    }
+}
+
+///////////////////////////
+
+@media(max-width: 1200px) {
+    .decor {
+        &__inner {
+            display: block;
+        }
+        &__wrap {
+            padding: 10% 0 0 35%;
+        }
+        &__left {
+            margin-bottom: 150px;
+        }
+        &__left,
+        &__right {
+            width: 100%;
+        }
+        &__img {
+            left: 30px;
+        }
+    }
+}
+
+@media(max-width: 860px) {
+    .decor {
+        &__wrap {
+            padding: 10% 0 0 50%;
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .decor {
+        &__left {
+            margin-bottom: 30px;
+        }
+        &__left,
+        &__right {
+            min-height: 350px;
+        }
+        &__wrap {
+            padding: 30px 0 0 30px;
+            max-width: 325px;
+        }
+        &__img {
+            top: 50px;
+            left: auto;
+            right: 10px;
+            height: 180px;
+        }
+    }
+}
+
+@media(max-width: 475px) {
+    .decor {
+        &__title {
+            margin-bottom: 15px;
+            font-size: 21px;
+        }
+        &__descr {
+            word-break: break-all;
+        }
+        &__wrap {
+            max-width: 240px;
+        }
+        &__img {
+            height: 152px;
+        }
+    }
+}
+
+@media(max-width: 350px){ 
+    .decor {
+        &__wrap {
+            max-width: 100%;
+        }
+        &__img {
+            display: none;
+        }
+        &__left,
+        &__right {
+            min-height: 280px;
+        }
+    }
+}

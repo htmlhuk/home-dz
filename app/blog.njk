@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/blog.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+          {% include 'app/module/_index/_header/_header.njk' %}
+
+    <main class="main">
+
+        <section class="top">
+            <div class="container">
+                <h2 class="top__title">Blog</h2>
+
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Home</a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a class="breadcrumbs__link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="blog-page">
+            <div class="container">
+                <div class="blog-page__inner">
+                    <div class="blog-page__content">
+
+                        <div class="blog-page__item">
+                            <div class="blog-page__wrap">
+                                <img class="blog-page__img" src="images/blog/1.jpg" alt="blog images">
+                                <div class="blog-page__box">
+                                    <div class="blog-page__date"><span>&#9745;</span> 28 JANUARY, 2020</div>
+                                    <a class="blog-page__admin" href="#"><span>&#9786;</span> BY ADMIN</a>
+                                </div>
+                            </div>
+                            <h2 class="blog-page__title">
+                                Fonsectetur adipisicing  eiusmod 
+                            </h2>
+                            <p class="blog-page__descr">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            </p>
+                            <a class="link-view blog-page__link" href="#">View More</a>
+                        </div>
+                        <div class="blog-page__item">
+                            <div class="blog-page__wrap">
+                                <img class="blog-page__img" src="images/blog/2.jpg" alt="blog images">
+                                <div class="blog-page__box">
+                                    <div class="blog-page__date"><span>&#9745;</span> 28 JANUARY, 2020</div>
+                                    <a class="blog-page__admin" href="#"><span>&#9786;</span> BY ADMIN</a>
+                                </div>
+                            </div>
+                            <h2 class="blog-page__title">
+                                Fonsectetur adipisicing elit,
+                            </h2>
+                            <p class="blog-page__descr">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            </p>
+                            <a class="link-view blog-page__link" href="#">View More</a>
+                        </div>
+                        <div class="blog-page__item">
+                            <div class="blog-page__wrap">
+                                <img class="blog-page__img" src="images/blog/3.jpg" alt="blog images">
+                                <div class="blog-page__box">
+                                    <div class="blog-page__date"><span>&#9745;</span> 28 JANUARY, 2020</div>
+                                    <a class="blog-page__admin" href="#"><span>&#9786;</span> BY ADMIN</a>
+                                </div>
+                            </div>
+                            <h2 class="blog-page__title">
+                                Fsectetur adipisicing tempor incididunt 
+                            </h2>
+                            <p class="blog-page__descr">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            </p>
+                            <a class="link-view blog-page__link" href="#">View More</a>
+                        </div>
+                        <div class="blog-page__item">
+                            <div class="blog-page__wrap">
+                                <img class="blog-page__img" src="images/blog/4.jpg" alt="blog images">
+                                <div class="blog-page__box">
+                                    <div class="blog-page__date"><span>&#9745;</span> 28 JANUARY, 2020</div>
+                                    <a class="blog-page__admin" href="#"><span>&#9786;</span> BY ADMIN</a>
+                                </div>
+                            </div>
+                            <h2 class="blog-page__title">
+                                vonsectetur adipisicing elit
+                            </h2>
+                            <p class="blog-page__descr">
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magn  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            </p>
+                            <a class="link-view blog-page__link" href="#">View More</a>
+                        </div>
+
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item pagination__item--active">
+                                    <a class="pagination__link" href="#">1</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">2</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a class="pagination__link" href="#">3</a>
+                                </li>
+                                <li class="pagination__item">
+                                    <span class="pagination__dots" href="#">.....</span>
+                                </li>
+                            </ul>
+                            <a class="pagination__next" href="#">Next</a>
+                        </div>
+                    </div>
+
+                    <aside class="blog-page__aside">
+                        <form class="search-form" action="#">
+                            <input class="search-form__input" type="text">
+                            <button class="search-form__btn" type="submit">
+                                <svg width="18px" height="18px">
+                                    <path fill-rule="evenodd" fill="rgb(9, 64, 116)"
+                                        d="M17.249,17.920 C17.098,17.920 16.946,17.862 16.830,17.746 L11.531,12.448 C10.398,13.393 8.941,13.962 7.353,13.962 C3.752,13.962 0.822,11.032 0.822,7.431 C0.822,3.829 3.752,0.899 7.353,0.899 C10.955,0.899 13.884,3.829 13.884,7.431 C13.884,9.018 13.316,10.475 12.371,11.609 L17.669,16.907 C17.785,17.023 17.843,17.175 17.843,17.327 C17.843,17.478 17.785,17.630 17.669,17.746 C17.553,17.862 17.401,17.920 17.249,17.920 ZM7.353,2.087 C4.407,2.087 2.010,4.484 2.010,7.431 C2.010,10.377 4.407,12.775 7.353,12.775 C10.300,12.775 12.698,10.377 12.698,7.431 C12.698,4.484 10.300,2.087 7.353,2.087 Z" />
+                                </svg>
+                            </button>
+                        </form>
+                        <form class="filter-category filter" action="#">
+                            <h3 class="filter__title">CATEGORY</h3>
+                            <div class="filter-category__selects">
+                                <select class="filter-category__sort" name="chair">
+                                    <option class="filter-category__option filter--default" value="default">Chair
+                                    </option>
+                                    <option class="filter-category__option" value="2">2</option>
+                                    <option class="filter-category__option" value="3">3</option>
+                                    <option class="filter-category__option" value="4">4</option>
+                                </select>
+                                <select class="filter-category__sort" name="table">
+                                    <option class="filter-category__option filter--default" value="default">Table
+                                    </option>
+                                    <option class="filter-category__option" value="2">2</option>
+                                    <option class="filter-category__option" value="3">3</option>
+                                    <option class="filter-category__option" value="4">4</option>
+                                </select>
+                                <select class="filter-category__sort" name="lamp">
+                                    <option class="filter-category__option filter--default" value="default">Lamp
+                                    </option>
+                                    <option class="filter-category__option" value="2">2</option>
+                                    <option class="filter-category__option" value="3">3</option>
+                                </select>
+                                <select class="filter-category__sort" name="watch">
+                                    <option class="filter-category__option filter--default" value="default">Watch
+                                    </option>
+                                    <option class="filter-category__option" value="2">2</option>
+                                    <option class="filter-category__option" value="3">3</option>
+                                </select>
+                                <select class="filter-category__sort" name="clock">
+                                    <option class="filter-category__option filter--default" value="default">Clock
+                                    </option>
+                                    <option class="filter-category__option" value="2">2</option>
+                                    <option class="filter-category__option" value="3">3</option>
+                                    <option class="filter-category__option" value="4">4</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="recent-posts filter">
+                            <h3 class="filter__title">Recent Posts</h3>
+                            <div class="recent-posts__box">
+                                <a class="recent-posts__link" href="#">
+                                    <img class="recent-posts__img" src="images/posts/1.jpg" alt="posts images">
+                                </a>
+                                <div class="recent-posts__content">
+                                    <a class="recent-posts__text" href="#">
+                                        Corem ipsum dolor tetur adipisicing elit
+                                    </a>
+                                    <div class="recent-posts__date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__box">
+                                <a class="recent-posts__link" href="#">
+                                    <img class="recent-posts__img" src="images/posts/2.jpg" alt="posts images">
+                                </a>
+                                <div class="recent-posts__content">
+                                    <a class="recent-posts__text" href="#">
+                                        Fdipisicing elit, sed do eiusmod tempor
+                                    </a>
+                                    <div class="recent-posts__date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__box">
+                                <a class="recent-posts__link" href="#">
+                                    <img class="recent-posts__img" src="images/posts/3.jpg" alt="posts images">
+                                </a>
+                                <div class="recent-posts__content">
+                                    <a class="recent-posts__text" href="#">
+                                        Eonsectetur adipisicing elit, sed do eiusmod 
+                                    </a>
+                                    <div class="recent-posts__date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recent-posts__box">
+                                <a class="recent-posts__link" href="#">
+                                    <img class="recent-posts__img" src="images/posts/4.jpg" alt="posts images">
+                                </a>
+                                <div class="recent-posts__content">
+                                    <a class="recent-posts__text" href="#">
+                                        gnim ad minim veniam, quis nostrud
+                                    </a>
+                                    <div class="recent-posts__date">
+                                        28 JANUARY, 2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+            
+       {% include 'app/module/_index/_partners-login/_partners-login.njk' %}
+
+    </main>
+
+     {% include 'app/module/_index/_footer/_footer.njk' %}
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'vars';
+@import 'fonts';
+@import 'animation';
+@import'../../node_modules/slick-carousel/slick/slick.scss';
+@import'../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox';
+@import 'global';
+@import '../module/_index/_header/_header';
+@import '../module/_index/_footer/_footer';
+@import '../module/_index/_top-slider/_top-slider';
+@import '../module/_index/_services/_services';
+@import '../module/_index/_product/_product';
+@import '../module/_index/_decor/_decor';
+@import '../module/_index/_design/_design';
+@import '../module/_index/_video/_video';
+@import '../module/_index/_articles/_articles';

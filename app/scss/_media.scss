@@ -1,0 +1,221 @@
+@media(max-width: 1200px) {
+    .blog-page {
+        padding: 50px 0 0;
+        &__title {
+            line-height: 48px;
+        }
+        &__inner {
+            flex-direction: column-reverse;
+        }
+        &__aside {
+            width: 100%;
+            .search-form {
+                width: 100%;
+                justify-content: center;
+                &__input{ 
+                    max-width: 80%;
+                }
+            }
+        }
+        .filter-category,
+        .recent-posts { 
+            display: none;
+        }
+        &__content {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .shop {
+        &__inner {
+            flex-direction: column;
+        }
+        &__product {
+            padding-left: 0;
+        }
+        &__product-items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__filter-btn {
+            display: block;
+            margin-bottom: 20px;
+            border: none;
+            height: 40px;
+            width: 100px;
+            background-color: #edf1f4;
+        }
+        &__filters {
+            display: none;
+        }
+
+        &-item__text {
+            max-width: 100%;
+        }
+    }
+
+    .recent-products {
+        &__items {
+            display: flex;
+            column-gap: 15px;
+            align-items: flex-start;
+        }
+    }
+}
+
+@media(max-width: 792px) {
+    .shop {
+        padding-top: 50px;
+        &__product-items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &-item {
+            flex-direction: column;
+        }
+        &-item__content {
+            padding: 25px 0 0 15px;
+        }
+        &-item__border {
+            min-width: 100%;
+            max-width: 430px;
+            height: 340px;
+            margin: 0 auto;
+        }
+        &-item__images {
+            height: 260px;
+            width: 300px;
+        }
+
+    }
+
+    .blog-box {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__left {
+            max-width: 600px;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        &__wrap-text {
+            padding-left: 20px;
+        }
+    }
+    h4 {
+        margin-bottom: 8px;
+    }
+}
+
+@media(max-width: 650px) {
+    .designer {
+        margin: 30px 0;
+    }
+    .comment {
+        &__title {
+            margin-bottom: 25px;
+        }
+        &__item:nth-child(3) {
+            margin-left: 20px;
+        }
+        &__wrapper-top {
+            display: block;
+        }
+    }
+    .recent-products {
+        &__items { 
+            overflow-x: auto;
+        }
+        &__title {
+            white-space: nowrap;
+        }
+    }
+}
+
+@media(max-width: 570px) {
+    .shop {
+        &__product-items {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &-item__content {
+            padding: 10px 0 0 5px;
+        }
+        &-item__title {
+            margin-bottom: 10px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+    }
+    .blog-page {
+        &__wrap {
+            height: 300px;
+        }
+        &__img {
+            height: 300px;
+        }
+    }
+    .blog-box {
+        blockquote {
+            padding: 15px 0 0 12px;
+        }
+        &__wrap {
+            flex-direction: column;
+        }
+    }
+    .designer {
+        &__inner {
+            display: block;
+        }
+        &__img-box {
+            margin-bottom: 15px;
+        }
+    }
+    .comment-form {
+        &__top {
+            display: block;
+        }
+        &__input--name {
+            margin-right: 0;
+        }
+        &__input {
+            width: 100%;
+        }
+    }
+}
+
+
+@media(max-width: 450px) {
+    .comment {
+        &__img{ 
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 350px)  {
+    .blog-page {
+        &__wrap {
+            height: 250px;
+        }
+        &__img {
+            height: 250px;
+        }
+        &__box {
+            width: 100%;
+        }
+    }
+    
+    .pagination {
+        &__item {
+            width: 40px;
+            height: 40px;
+        }
+        &__link {
+            line-height: 40px;
+        }
+        &__next {
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px;
+        }
+    }
+}

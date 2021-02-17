@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/login.min.css">
+</head>
+
+<body>
+
+          {% include 'app/module/_index/_header/_header.njk' %}
+
+    <main class="main">
+
+      {% include 'app/module/_index/_top/_top.njk' %}
+      {% include 'app/module/_index/_login/_login.njk' %}
+      {% include 'app/module/_index/_partners-login/_partners-login.njk' %}
+
+    </main>
+
+    {% include 'app/module/_index/_footer/_footer.njk' %}
+
+
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

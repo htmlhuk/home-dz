@@ -1,0 +1,20 @@
+// partners-login
+.partners-login {
+    background-color: #fef7f0;
+    &__inner {
+        padding: 100px 0 0;
+        height: 250px;
+        cursor: grab;
+    }
+    &__slick-wrap {
+        padding: 0 15px;
+    }
+    &__images {
+        margin: 0 auto;
+    }
+    .slick-track {
+        display: flex;
+        align-items: center;
+    }
+}
+///////////////

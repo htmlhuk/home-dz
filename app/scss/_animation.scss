@@ -1,0 +1,35 @@
+@keyframes anim-dots {
+    30% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes anim-arrow {
+    30% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes anim-news {
+    100% {
+        left: 150%;
+    }
+}
